@@ -1,0 +1,14 @@
+<h2>KAAYM Music Videos</h2>
+<ul>
+    {% for video in videos %}
+    <li>
+        <strong>{{ video.title }}</strong><br>
+        <iframe width="560" height="315"
+            src="{{ video.video_url|cut:'watch?v='|add:'embed/' }}"
+            frameborder="0" allowfullscreen></iframe>
+        <p>{{ video.description }}</p>
+    </li>
+    {% empty %}
+    <li>No videos available yet.</li>
+    {% endfor %}
+</ul>

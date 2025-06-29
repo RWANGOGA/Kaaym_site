@@ -1,0 +1,19 @@
+<h2>KAAYM Audio Tracks</h2>
+<ul>
+    {% for track in tracks %}
+    <li>
+        <strong>{{ track.title }}</strong><br>
+        {% if track.audio_file %}
+            <audio controls>
+                <source src="{{ track.audio_file.url }}" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        {% elif track.external_link %}
+            <a href="{{ track.external_link }}" target="_blank">Listen on external platform</a>
+        {% endif %}
+        <p>{{ track.description }}</p>
+    </li>
+    {% empty %}
+    <li>No audio tracks available yet.</li>
+    {% endfor %}
+</ul>
