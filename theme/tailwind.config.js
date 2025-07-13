@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/**/*.{html,js}",       // Default path
@@ -9,3 +10,4 @@ module.exports = {
   },
   plugins: [],
 }
+
