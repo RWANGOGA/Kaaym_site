@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
-  input, textarea, select {
-    @apply border rounded-md focus:border-0 ring-2 ring-gray-50 ;
-  }
-}
