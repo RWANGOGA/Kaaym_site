@@ -1,1 +1,60 @@
-./__pycache__/**/*
+// ...existing code...
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django / DB / media / static
+db.sqlite3
+media/
+static/
+staticfiles/
+local_settings.py
+*.log
+
+# Byte- and test-related
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+
+# IDEs / editors
+.vscode/
+
+# OS / misc
+.DS_Store
+Thumbs.db
+~$*
+
+# Jupyter
+.ipynb_checkpoints
+
+# Secrets / env overrides
+.env.local
+.env.*.local
+
+# Gunicorn / Celery / other runtime files
+gunicorn.pid
+celerybeat-schedule
+
+# pyenv
+.python-version
+
+# OneDrive temp
+OneDriveTemp/
